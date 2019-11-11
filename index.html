@@ -4,9 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="styles.css" type="text/css">
-    <title>Pizza Hut</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" type="text/css" href="styles.css"> -->
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" media="all">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">   
+    <title>Pizza Hut</title>
 </head>
 <body>
 <div class="container">
@@ -21,20 +24,21 @@
     
     <p class="size">Select Pizza size here:</p>
       <select name="form-captain" id="size">
-      <option value="small">Small</option>
-      <option value="medium">Medium</option>
-      <option value="large">Large</option>
+      <option value="small">Small $5</option>
+      <option value="medium">Medium$7</option>
+      <option value="large">Large$12</option>
     </select><br>
     
 
   <p class="crusty">Select Pizza Crust:</p>
   <select name="form-captain" id="crust">
-    <option value="crispy">Crispy</option>  
-    <option value="crispy">Criapy</option>
-    <option value="stuffed">Stuffed</option>
-    <option value="gluten">Gluten-free</option>
+    <option value="crispy">Crispy $2</option>  
+    <option value="crispy">Criapy $3</option>
+    <option value="stuffed">Stuffed $4</option>
+    <option value="gluten">Gluten-free $5</option>
   </select><br>
 
+  <p class="topping">Toppings</p>
   <form>
     <input type="checkbox" name="top" value="pepperolive"> Pepper Olive<br>
     <input type="checkbox" name="top" value="extracheese"> Extra Cheese<br>
@@ -44,7 +48,11 @@
     <input type="checkbox" name="top" value="cheese"> Cheese<br>
     <input type="checkbox" name="top" value="spinach"> Spinach<br>
   </form>
-   
+   <!-- <input class="bg-success" type="button" onclick="alert('Added to cart')" value="Pack to Cart"> -->
+    </form>
+   <span class="btn btn-primary" id="add-address">Add to cart</span>
+  <button type="submit" class="btn">Add</button>
+
 </div>
 </body>
 </html>
