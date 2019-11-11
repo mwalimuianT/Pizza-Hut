@@ -41,3 +41,25 @@ var toppings = function() {
         alert("Kindly choose")
     }
 }
+
+
+var total = 0;
+$("#size").on('click', ".space", function() {
+    $(this).appendTo("#basket");
+    getTotal()
+});
+
+$("#basket").on('click', ".space", function() {
+    $(this).appendTo("#size");
+    getTotal()
+});
+
+function getTotal() {
+    total = 0;
+    $("#basket").find('.price').each(function(i){
+        total += parseInt($(this).text().slice(0, -1));
+        if(i + 1 === $("#basket").find('.space').length) {
+            $('total_price').text(total+'$');
+        }
+    });
+}
