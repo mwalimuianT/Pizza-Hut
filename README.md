@@ -4,6 +4,9 @@
 ## Description
 - A website that sells Pizza online and let's customers spice their favourite pizza with different toppings. Customers order, set their destination and their package is delivered within minutes.
 
+## Image
+ <img class="pizza 1" src="images/pizza sizes/medium pizza.jpeg" alt="medium pizza" width="170px">
+
 ## Author
 - Ian Mwalimu a Full-stack web developer
 ## Setup instructions
