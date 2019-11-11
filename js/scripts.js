@@ -3,7 +3,7 @@ function Pizza (crust, size) {
     this.size = size;
     this.toppings = [];
     this.size = size;
-    this.price = [0]
+    this.price = 0
 }
 
 Pizza.prototype.cost = function() {
@@ -17,4 +17,21 @@ Pizza.prototype.cost = function() {
     } else {
         price += 15;
     }
+    for (var i = 0; i < this.toppings.length; i++) {
+        price += 4;
+    }
+    if (this.crust === "Crispy") {
+        price += 2;
+    }else if (this.crust === "Stuffed") {
+        price += 4;
+    }else if (this.crust === "Criapy") {
+        price += 3;
+    }else if (this.crust === "Glutten-free") {
+        price += 5;
+    }else {
+        price =1;
+    }
 }
+
+
+
