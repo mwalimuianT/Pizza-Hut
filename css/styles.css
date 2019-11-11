@@ -1,6 +1,8 @@
 bg-success:hover {
-text-align: right;
+text-align: center;
+margin-top: 30px;
 }
+
 
 .topping {
     text-decoration: underline;
@@ -14,4 +16,7 @@ text-align: right;
 
 #add-address{
     margin-top: 30px;
+}
+#form {
+    margin-bottom: 30px;
 }
